@@ -1,0 +1,359 @@
+:root {
+    --primary: #2D6A4F;
+    /* Dark Green - Professional */
+    --secondary: #52B788;
+    /* Mid Green */
+    --accent: #FFD740;
+    --text: #333333;
+    --light-bg: #F8F9FA;
+    --dark-bg: #1B4332;
+    --danger: #D90429;
+    --success: #2D6A4F;
+    --white: #FFFFFF;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Lexend', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.5;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+/* Typography */
+.headline {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--dark-bg);
+}
+
+.highlight {
+    color: var(--secondary);
+    background: #E8F5E9;
+    padding: 0 5px;
+    border-radius: 4px;
+}
+
+.subheadline {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.pre-headline {
+    font-size: 13px;
+    color: var(--primary);
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.section-title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.section-title.impact {
+    color: var(--danger);
+    font-size: 24px;
+}
+
+/* Images placeholders */
+.main-image-container {
+    width: 100%;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 10px;
+}
+
+.main-image-container img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 15px 30px rgba(0, 0, 0, 0.15));
+    animation: float-mockup 6s ease-in-out infinite;
+}
+
+@keyframes float-mockup {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* CTA Buttons */
+.cta-button {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    background: #2D6A4F;
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 800;
+    font-size: 18px;
+    border-radius: 12px;
+    box-shadow: 0 6px 0 #1B4332;
+    margin: 20px 0;
+    transition: transform 0.1s;
+}
+
+.cta-button:active {
+    transform: translateY(3px);
+    box-shadow: 0 3px 0 #1B4332;
+}
+
+.cta-button.secondary {
+    background: #52B788;
+    box-shadow: 0 6px 0 #40916C;
+}
+
+.cta-button.pulse {
+    animation: pulse-animation 2s infinite;
+}
+
+@keyframes pulse-animation {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.02);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Sections */
+.pain.dark {
+    background: var(--dark-bg);
+    color: var(--white);
+}
+
+.bullets {
+    list-style: none;
+    text-align: left;
+    max-width: 250px;
+    margin: 20px auto;
+}
+
+.bullets li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+/* Cards */
+.module-card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    text-align: left;
+    border-left: 5px solid var(--secondary);
+}
+
+.module-card h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.bonus-item {
+    margin-bottom: 40px;
+}
+
+.bonus-emoji {
+    font-size: 60px;
+    margin-bottom: 15px;
+    display: block;
+}
+
+/* Pricing */
+.plan-card {
+    background: #fff;
+    padding: 30px 20px;
+    border-radius: 20px;
+    border: 3px solid var(--primary);
+    position: relative;
+    margin: 40px 0;
+}
+
+.best-value {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+.plan-price {
+    font-size: 48px;
+    font-weight: 800;
+    margin: 20px 0;
+}
+
+.plan-price .currency {
+    font-size: 20px;
+    vertical-align: top;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.plan-features {
+    list-style: none;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.plan-features li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+}
+
+/* Guarantee */
+.guarantee {
+    background: #E8F5E9;
+    /* Light green background */
+}
+
+.guarantee-card {
+    background: var(--white);
+    padding: 40px 20px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.guarantee-icon-wrapper {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px;
+    background: #F1F8F6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.padlock-icon {
+    font-size: 40px;
+}
+
+.seven-badge {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #2D6A4F;
+    color: white;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid #fff;
+}
+
+.guarantee-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.highlight-green {
+    color: #52B788;
+}
+
+.guarantee-text {
+    font-size: 15px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.guarantee-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-badge {
+    background: #2D3436;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* FAQ */
+.faq-list details {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+summary {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Footer Scarcity */
+.final-cta {
+    background: var(--dark-bg);
+    color: #fff;
+}
+
+.countdown {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--accent);
+    margin: 20px 0;
+}
