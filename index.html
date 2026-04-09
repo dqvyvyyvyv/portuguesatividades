@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1000 Atividades de Ortografia - BNCC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical font to improve FCP/LCP -->
+    <link rel="preload" href="https://fonts.gstatic.com/s/fredoka/v14/36mbZ89_id9G5D09EijD.woff2" as="font" type="font/woff2" crossorigin>
+
+    <!-- Optimized Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Inlined CSS to eliminate render-blocking request -->
+    <style>
+        :root { --bg-color: #FFF5F8; --text-primary: #2D3748; --text-secondary: #4A5568; --primary-color: #FF6B9E; --primary-dark: #D53F77; --accent-color: #00B5D8; --cta-color: #48BB78; --cta-hover: #38A169; --cta-shadow: #276749; --highlight: #F6AD55; --danger: #F56565; --card-bg: #FFFFFF; --border-color: #2D3748; --border-width: 3px; --radius-base: 16px; --radius-large: 24px; --radius-pill: 50px; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; font-size: 16px; }
+        body { font-family: 'Nunito', sans-serif; background-color: var(--bg-color); color: var(--text-primary); line-height: 1.6; background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='20' cy='20' r='2' fill='%23FF6B9E' fill-opacity='0.15'/%3E%3C/svg%3E"); background-attachment: fixed; }
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 2; }
+        h1, h2, h3 { font-family: 'Fredoka', cursive; font-weight: 600; line-height: 1.2; margin-bottom: 20px; color: var(--text-primary); }
+        .highlight { color: var(--primary-color); font-weight: 700; }
+        .highlight-danger { color: var(--danger); }
+        .cta-button { display: inline-block; background-color: var(--cta-color); color: #FFF; font-family: 'Fredoka', cursive; font-weight: 600; font-size: 1.2rem; text-transform: uppercase; text-decoration: none; padding: 18px 30px; border-radius: var(--radius-pill); border: var(--border-width) solid var(--border-color); box-shadow: 4px 6px 0px var(--border-color); transition: all 0.2s ease; text-align: center; cursor: pointer; letter-spacing: 1px; }
+        .cta-button:hover { background-color: var(--cta-hover); transform: translateY(2px) translateX(2px); box-shadow: 2px 4px 0px var(--border-color); }
+        .cta-button:active { transform: translateY(6px) translateX(4px); box-shadow: 0px 0px 0px var(--border-color); }
+        .cta-button.large { font-size: 1.4rem; padding: 24px 40px; width: 100%; max-width: 500px; }
+        .pulse { animation: pulse-cartoon 2s infinite; }
+        @keyframes pulse-cartoon { 0% { transform: scale(1); } 50% { transform: scale(1.03) rotate(-1deg); } 100% { transform: scale(1); } }
+        section { padding: 80px 0; position: relative; z-index: 10; }
+        .hero { padding: 80px 0 60px; background-color: var(--bg-color); border-bottom: var(--border-width) solid var(--border-color); position: relative; overflow: hidden; }
+        .hero::after { content: ''; position: absolute; bottom: -20px; left: 0; width: 100%; height: 40px; background-size: 40px 40px; background-image: radial-gradient(circle at 20px 0, var(--bg-color) 20px, transparent 21px); }
+        .hero-content { display: flex; align-items: center; gap: 40px; }
+        .hero-text { flex: 1; }
+        .hero-text h1 { font-size: 2.8rem; text-shadow: 2px 2px 0px #FFF, 4px 4px 0px rgba(0,0,0,0.1); }
+        .hero-text h1 .highlight { color: var(--primary-color); display: inline-block; transform: rotate(-2deg); }
+        .subheadline { font-size: 1.25rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 30px; background-color: #FFF; padding: 15px; border-radius: var(--radius-large); border: 3px dashed #CBD5E0; }
+        .hero-image { flex: 1; position: relative; }
+        .hero-mockup-img { width: 100%; max-width: 500px; border-radius: var(--radius-large); border: var(--border-width) solid var(--border-color); box-shadow: 8px 8px 0px var(--border-color); display: block; margin: 0 auto; transform: rotate(2deg); transition: transform 0.3s ease; }
+        .hero-mockup-img:hover { transform: rotate(0deg) scale(1.02); }
+        .problem { background-color: #FFE4E6; text-align: center; border-top: var(--border-width) solid var(--border-color); border-bottom: var(--border-width) solid var(--border-color); }
+        .problem h2 { font-size: 2.2rem; max-width: 800px; margin: 0 auto 30px; position: relative; display: inline-block; }
+        .problem h2::after { content: '🤔'; position: absolute; top: -20px; right: -30px; font-size: 2.5rem; transform: rotate(15deg); }
+        .problem p { font-size: 1.20rem; font-weight: 600; color: var(--text-primary); max-width: 800px; margin: 0 auto; background-color: var(--card-bg); padding: 25px; border-radius: var(--radius-large); border: var(--border-width) solid var(--border-color); box-shadow: 6px 6px 0px var(--border-color); }
+        .solution { background-color: #EBF8FF; background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%2363b3ed' fill-opacity='0.15' fill-rule='evenodd'/%3E%3C/svg%3E"); border-bottom: var(--border-width) solid var(--border-color); }
+        .solution h2 { text-align: center; font-size: 2.6rem; color: var(--accent-color); text-shadow: 2px 2px 0px #FFF; }
+        .solution-desc { text-align: center; font-size: 1.3rem; font-weight: 700; margin-bottom: 40px; color: var(--text-primary); }
+        .benefits-grid { display: flex; flex-direction: column; gap: 20px; max-width: 700px; margin: 0 auto; }
+        .benefit-item { display: flex; align-items: center; gap: 20px; background-color: var(--card-bg); padding: 20px 25px; border-radius: var(--radius-large); border: var(--border-width) solid var(--border-color); box-shadow: 4px 4px 0px var(--accent-color); transform: rotate(-1deg); transition: transform 0.2s ease; }
+        .benefit-item:nth-child(even) { transform: rotate(1deg); box-shadow: 4px 4px 0px var(--primary-color); }
+        .benefit-item:hover { transform: scale(1.02) rotate(0deg); }
+        .check-icon { font-size: 2rem; background-color: #FEFCBF; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; border: 2px solid var(--border-color); box-shadow: 2px 2px 0px var(--border-color); }
+        .benefit-item p { font-size: 1.2rem; font-weight: 700; margin: 0; }
+        .inside-portal { background-color: #FFF; border-bottom: var(--border-width) solid var(--border-color); text-align: center; }
+        .inside-portal .section-header { margin-bottom: 50px; }
+        .inside-portal h2 { font-size: 2.5rem; margin-bottom: 15px; }
+        .inside-portal .section-header p { font-size: 1.2rem; font-weight: 600; color: var(--text-secondary); max-width: 600px; margin: 0 auto; }
+        .portal-video-wrapper { display: flex; justify-content: center; align-items: center; }
+        .mobile-frame { width: 320px; height: 640px; background-color: var(--border-color); border-radius: 40px; padding: 12px; position: relative; box-shadow: 0 20px 50px rgba(0,0,0,0.1), 8px 8px 0px var(--accent-color); border: var(--border-width) solid var(--border-color); }
+        .mobile-frame::before { content: ''; position: absolute; top: 5px; left: 50%; transform: translateX(-50%); width: 60px; height: 5px; background-color: rgba(255,255,255,0.2); border-radius: 10px; }
+        .mobile-frame .screen { width: 100%; height: 100%; background-color: #000; border-radius: 30px; overflow: hidden; position: relative; }
+        .mobile-frame video { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .offer { background-color: var(--primary-color); background-image: repeating-linear-gradient(45deg, transparent, transparent 20px, rgba(255,255,255,0.1) 20px, rgba(255,255,255,0.1) 40px); color: #FFF; text-align: center; border-bottom: var(--border-width) solid var(--border-color); }
+        .offer h2 { color: #FFF; font-size: 2.5rem; text-shadow: 3px 3px 0px var(--primary-dark); }
+        .offer .highlight { color: #FEFCBF; text-shadow: none; background-color: var(--primary-dark); padding: 0 10px; border-radius: 8px; display: inline-block; }
+        .offer-box { background-color: var(--card-bg); color: var(--text-primary); padding: 50px; border-radius: var(--radius-large); border: var(--border-width) solid var(--border-color); box-shadow: 8px 8px 0px var(--primary-dark); max-width: 800px; margin: 0 auto; }
+        .offer-box h2 { color: var(--text-primary); text-shadow: none; }
+        .anchor-price { font-size: 1.3rem; font-weight: 700; margin-bottom: 20px; color: var(--text-secondary); }
+        .anchor-price strike { color: var(--danger); font-weight: 800; font-size: 1.5rem; }
+        .revelation { font-size: 1.3rem; font-weight: 600; margin-bottom: 40px; background-color: #FFF5F8; padding: 20px; border-radius: var(--radius-base); border: 2px dashed var(--primary-color); }
+        .revelation strong { font-size: 2.2rem; color: var(--primary-color); display: block; margin-top: 15px; font-family: 'Fredoka', cursive; }
+        .secure-checkout { margin-top: 25px; font-size: 1rem; font-weight: 700; color: var(--cta-shadow); display: flex; justify-content: center; align-items: center; gap: 8px; background-color: #F0FDF4; padding: 10px 20px; border-radius: var(--radius-pill); border: 2px solid #86EFAC; max-width: fit-content; margin-left: auto; margin-right: auto; }
+        .faq { background-color: #FAF5FF; border-bottom: var(--border-width) solid var(--border-color); }
+        .faq h2 { text-align: center; font-size: 2.5rem; color: #805AD5; margin-bottom: 40px; text-shadow: 2px 2px 0px #FFF; }
+        .accordion { max-width: 800px; margin: 0 auto; }
+        .accordion-item { background-color: var(--card-bg); border: var(--border-width) solid var(--border-color); border-radius: var(--radius-base); margin-bottom: 20px; overflow: hidden; box-shadow: 4px 4px 0px #D6BCFA; }
+        .accordion-header { width: 100%; padding: 20px 25px; background-color: #E9D8FD; border: none; border-bottom: var(--border-width) solid var(--border-color); text-align: left; font-size: 1.2rem; font-weight: 700; font-family: 'Fredoka', cursive; color: var(--text-primary); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background-color 0.2s; }
+        .accordion-header:hover { background-color: #D6BCFA; }
+        .accordion-header::after { content: '➕'; font-size: 1.2rem; }
+        .accordion-header.active::after { content: '➖'; }
+        .accordion-header.active { background-color: #D6BCFA; }
+        .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.3s ease-out; background-color: #FFF; }
+        .accordion-content p { padding: 25px; color: var(--text-primary); font-weight: 600; font-size: 1.1rem; }
+        .guarantee { background-color: #FEFCBF; padding: 60px 0; border-bottom: var(--border-width) solid var(--border-color); }
+        .guarantee-content { display: flex; align-items: center; justify-content: center; gap: 30px; max-width: 800px; margin: 0 auto; background-color: var(--card-bg); padding: 30px; border-radius: var(--radius-large); border: var(--border-width) solid var(--border-color); box-shadow: 6px 6px 0px #D69E2E; }
+        .guarantee-icon { font-size: 5rem; animation: pulse-cartoon 2s infinite; }
+        .guarantee-text h3 { font-size: 1.8rem; color: #B45309; margin-bottom: 10px; }
+        .guarantee-text p { font-weight: 600; font-size: 1.1rem; }
+        footer { background-color: var(--text-primary); color: #FFF; text-align: center; padding: 50px 0; font-size: 1rem; font-weight: 600; }
+        footer p { margin-bottom: 15px; }
+        .copyright { margin-top: 30px; opacity: 0.6; font-size: 0.9rem; }
+        @media (max-width: 768px) { .hero { padding: 40px 0; } .hero-content { flex-direction: column; text-align: center; } .hero-text h1 { font-size: 2.2rem; } .cta-button { width: 100%; padding: 20px; } .benefit-item { flex-direction: column; text-align: center; gap: 15px; } .guarantee-content { flex-direction: column; text-align: center; padding: 20px; } .offer-box { padding: 30px 20px; } .revelation strong { font-size: 1.8rem; } }
+    </style>
+    <!-- UTMify Script -->
+    <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" data-utmify-prevent-xcod-sck
+        data-utmify-prevent-subids async defer></script>
+    <script>
+        window.pixelId = "69cf0af0c6a8baf1674e90c7";
+        var a = document.createElement("script");
+        a.setAttribute("async", "");
+        a.setAttribute("defer", "");
+        a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+        document.head.appendChild(a);
+    </script>
+</head>
+
+<body>
+
+    <!-- Bloco 1: A Promessa (Hero) -->
+    <header class="hero" id="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <p style="font-weight: 500; margin-bottom: 15px;">✨ Professora, chega de corrigir os mesmos erros toda semana!</p>
+                <h1>Elimine a "escrita inventada" e tenha acesso a <span class="highlight">1000 Atividades</span> de
+                        Ortografia prontas para aplicar.</h1>
+                <p class="subheadline">Seus alunos trocam S por Z?<br>Engolem o H?<br>Confundem X com CH?<br><br>Resolva isso com um material estruturado e alinhado à BNCC.</p>
+                <a href="#oferta" class="cta-button pulse">🎉 QUERO LIMPAR A ESCRITA DA MINHA TURMA</a>
+                <p style="margin-top: 20px; font-size: 0.9em; opacity: 0.8;">🔒 Acesso imediato no e-mail | Garantia 7 dias</p>
+            </div>
+            <div class="hero-image">
+                <img src="https://i.imgur.com/xpyvdcy.png" alt="Mockup 1000 Atividades de Ortografia"
+                    class="hero-mockup-img" width="500" height="500" fetchpriority="high" decoding="async">
+            </div>
+        </div>
+    </header>
+
+    <!-- Bloco 2: O Problema -->
+    <section class="problem" id="problema">
+        <div class="container">
+            <h2>⚠️ Realidade em Sala: A frustração da <span class="highlight-danger">"Caneta Vermelha"</span> que nunca acaba.
+            </h2>
+            <p>Você ensina a regra. Você dá exemplos no quadro. O aluno balança a cabeça dizendo que entendeu. Mas
+                quando você pega o caderno para corrigir... lá estão eles de novo.</p>
+                <p><strong>Não é falta de explicação. É falta de treino direcionado.</strong></p>
+                <ul style="list-style: none; padding: 0; margin-top: 25px; font-weight: 700; font-size: 1.2rem; color: #d63031;">
+                    <li style="margin-bottom: 8px;">✖ Caza → Casa</li>
+                    <li style="margin-bottom: 8px;">✖ Futebom → Futebol</li>
+                    <li style="margin-bottom: 8px;">✖ Omen → Homem</li>
+                </ul>
+        </div>
+    </section>
+
+    <!-- Bloco 3: A Solução -->
+    <section class="solution" id="solucao">
+        <div class="container">
+            <h2>A Solução Definitiva: O <span class="highlight">Kit 1000 Atividades de Ortografia!</span></h2>
+            <p class="solution-desc">Um acervo desenhado para criar Memória Visual. É um sistema de intervenção completo que ataca cada dificuldade. Chega de atividades sem graça!</p>
+
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <span class="check-icon">✅</span>
+                    <p><strong>Memória Visual:</strong> Reconhecimento instantâneo da grafia correta.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="check-icon">✅</span>
+                    <p><strong>Intervenção Direta:</strong> Ataque cirúrgico em S/Z/SS, X/CH, H e mais.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="check-icon">✅</span>
+                    <p><strong>Automatização:</strong> Repetição inteligente para transformar a regra em hábito.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="check-icon">✅</span>
+                    <p><strong>Ortografia Contextualizada:</strong> Aplicação em frases e pequenos textos.</p>
+                </div>
+                <div class="benefit-item">
+                    <span class="check-icon">✅</span>
+                    <p><strong>Correção Rápida:</strong> Tudo com gabarito completo para facilitar a sua revisão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloco Extra: Veja por Dentro -->
+    <section class="inside-portal" id="portal-por-dentro">
+        <div class="container">
+            <div class="section-header">
+                <h2>Veja como é o <span class="highlight">portal por dentro</span></h2>
+                <p>Assista ao vídeo e veja como é simples e rápido acessar todo o seu material na Plataforma EducaPlay.
+                </p>
+            </div>
+
+            <div class="portal-video-wrapper">
+                <div class="mobile-frame">
+                    <div class="screen">
+                        <video controls poster="https://i.imgur.com/SN6iiI0.jpg" loading="lazy">
+                            <source src="https://i.imgur.com/SN6iiI0.mp4" type="video/mp4">
+                            Seu navegador não suporta vídeos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloco 4: Oferta e Preço -->
+    <section class="offer" id="oferta">
+        <div class="container offer-box">
+            <h2>Menos que um <span class="highlight">cafézinho na padaria</span> ☕</h2>
+            <p class="anchor-price">Um kit completo com 1000 atividades de ortografia + Bônus poderia custar facilmente
+                <strike>R$ 136,70</strike>.</p>
+            <p class="revelation">Mas você pode aproveitar nossa oferta promocional e levar o <strong>Plano Básico (500 Atividades + Acesso Vitalício)</strong> com acesso imediato na plataforma por apenas <strong>R$ 10,00</strong>.</p>
+            
+            <p style="margin-top: 15px; font-weight: 600; background: rgba(255, 234, 167, 0.4); color: #d35400; padding: 12px; border-radius: 8px; border: 1px dashed #fdcb6e; font-size: 0.95rem;">Deseja mais? Oferecemos o KIT COMPLETO Premium (1000 Atividades + Todos os Bônus) por apenas R$ 24,90 à vista na finalização.</p>
+
+            <a href="https://pay.wiapy.com/FvRSTHpzuj" class="cta-button large pulse">SIM! QUERO ACESSAR A PLATAFORMA AGORA</a>
+            <div class="secure-checkout">
+                <span>🔒 Compra 100% Segura e Acesso Imediato</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloco 5: FAQ -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2>Perguntas Frequentes</h2>
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">Para quais turmas o material é indicado?</button>
+                    <div class="accordion-content">
+                        <p>O material é ideal para turmas de alfabetização e reforço escolar (1º ao 5º ano).</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Como vou receber o material?</button>
+                    <div class="accordion-content">
+                        <p>Você recebe o acesso imediato via e-mail após a confirmação do pagamento. Os materiais estão em uma plataforma segura, baixáveis em PDF.</p>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <button class="accordion-header">Está de acordo com a BNCC?</button>
+                    <div class="accordion-content">
+                        <p>Sim, todas as atividades são alinhadas às competências de ortografia da BNCC.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bloco 6: Garantia e Rodapé -->
+    <section class="guarantee">
+        <div class="container">
+            <div class="guarantee-content">
+                <div class="guarantee-icon">🛡️</div>
+                <div class="guarantee-text">
+                    <h3>7 Dias de Garantia Incondicional</h3>
+                    <p>Risco Zero. Se você não gostar do material por qualquer motivo, nós devolvemos os seus R$ 10,00 sem burocracia. É preto no branco.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>Avisos legais · Termos de Uso · Políticas de Privacidade</p>
+            <p>Contato: educaplay@contato.com</p>
+            <p class="copyright">&copy; 2026 Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
